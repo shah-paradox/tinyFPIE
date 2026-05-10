@@ -8,8 +8,7 @@ from fpie import core_openmp
 from fpie.io import read_images, write_image
 from fpie.process import GridProcessor
 
-# Must match the -C flag passed to likwid-perfctr
-os.environ["OMP_NUM_THREADS"] = "4"
+import config
 
 
 def main():
@@ -17,16 +16,12 @@ def main():
     core_openmp.likwid_init()
 
     # 1. Load images
-    print("Loading images...")
+    print(f"Loading images from {config.TEST_PREFIX}...")
     try:
-        src, mask, tgt = read_images(
-            "test2_src.png", "test2_mask.png", "test2_target.png"
-        )
+        src, mask, tgt = read_images(config.SRC_PATH, config.MASK_PATH, config.TGT_PATH)
     except Exception as e:
         print(f"Error loading images: {e}")
-        print(
-            "Please ensure test2_src.png, test2_mask.png, and test2_target.png exist."
-        )
+        print(f"Please ensure {config.SRC_PATH}, {config.MASK_PATH}, and {config.TGT_PATH} exist.")
         return
 
     # 2. Initialize the OpenMP Grid Processor
@@ -35,14 +30,14 @@ def main():
     proc = GridProcessor(
         gradient="src",
         backend="openmp",
-        n_cpu=4,  # Adjust based on your hardware
-        grid_x=8,
-        grid_y=8,
+        n_cpu=config.N_CPU,  # Adjust based on your hardware
+        grid_x=config.GRID_X,
+        grid_y=config.GRID_Y,
     )
 
     # 3. Reset the solver with input data
     # (0, 0) are the offsets for mask on src and (130, 130) for mask on tgt
-    n_vars = proc.reset(src, mask, tgt, (0, 0), (260, 260))
+    n_vars = proc.reset(src, mask, tgt, config.SRC_OFFSET, config.TGT_OFFSET)
     print(f"Number of variables to solve: {n_vars}")
 
     # 4. Run solver iterations

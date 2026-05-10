@@ -348,6 +348,16 @@ class GridProcessor(BaseProcessor):
         x, y = np.nonzero(mask)
         x0, x1 = x.min() - 1, x.max() + 2
         y0, y1 = y.min() - 1, y.max() + 2
+
+        # Check if the mask fits in both source and target images
+        if mask_on_src[0] + x0 < 0 or mask_on_src[1] + y0 < 0 or \
+           mask_on_src[0] + x1 > src.shape[0] or mask_on_src[1] + y1 > src.shape[1]:
+            raise ValueError(f"Mask at SRC_OFFSET {mask_on_src} is out of source image bounds (shape {src.shape[:2]})")
+        
+        if mask_on_tgt[0] + x0 < 0 or mask_on_tgt[1] + y0 < 0 or \
+           mask_on_tgt[0] + x1 > tgt.shape[0] or mask_on_tgt[1] + y1 > tgt.shape[1]:
+            raise ValueError(f"Mask at TGT_OFFSET {mask_on_tgt} is out of target image bounds (shape {tgt.shape[:2]})")
+
         mask = mask[x0:x1, y0:y1]
         max_id = np.prod(mask.shape)
 

@@ -1,0 +1,761 @@
+BENCHMARK REPORT WITH LIKWID METRICS (UPDATED STRATEGY)
+====================================================
+
+
+RUNNING: benchmark_openmp.py | TEST: test0 | THREADS: 8 | GROUP: FLOPS_SP
+---------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz
+CPU type:	Intel Kabylake processor
+CPU clock:	1.90 GHz
+--------------------------------------------------------------------------------
+Loading images from test1...
+Initializing OpenMP Multigrid solver...
+Number of variables to solve: 631856
+Running solver...
+Iteration 100, Error: [20708.412 21700.492 24620.406]
+Iteration 200, Error: [17758.191 19071.576 21736.479]
+Iteration 300, Error: [16517.104 18104.982 20702.615]
+Iteration 400, Error: [15883.359 17698.693 20212.824]
+Iteration 500, Error: [15530.918 17486.855 19928.424]
+Iteration 600, Error: [15315.145 17360.428 19741.242]
+Iteration 700, Error: [15173.995 17272.527 19606.668]
+Iteration 800, Error: [15078.663 17206.25  19505.242]
+Iteration 900, Error: [15013.163 17154.129 19425.818]
+Iteration 1000, Error: [14967.509 17112.15  19362.498]
+Iteration 1100, Error: [14934.408 17077.514 19312.045]
+Iteration 1200, Error: [14909.217 17047.951 19271.957]
+Iteration 1300, Error: [14889.185 17021.6   19237.613]
+Iteration 1400, Error: [14872.835 16997.764 19207.26 ]
+Iteration 1500, Error: [14859.591 16976.072 19180.158]
+Iteration 1600, Error: [14848.697 16956.236 19155.836]
+Iteration 1700, Error: [14839.063 16937.994 19133.941]
+Iteration 1800, Error: [14830.5625 16921.238  19113.941 ]
+Iteration 1900, Error: [14823.04  16905.783 19095.701]
+Iteration 2000, Error: [14816.36  16891.559 19078.982]
+Iteration 2100, Error: [14810.445 16878.424 19063.523]
+Iteration 2200, Error: [14805.18  16866.26  19049.256]
+Iteration 2300, Error: [14800.498 16855.096 19035.865]
+Iteration 2400, Error: [14796.365 16844.758 19023.363]
+Iteration 2500, Error: [14792.663 16835.256 19011.605]
+Iteration 2600, Error: [14789.363 16826.432 19000.557]
+Iteration 2700, Error: [14786.431 16818.234 18990.041]
+Iteration 2800, Error: [14783.834 16810.725 18980.209]
+Iteration 2900, Error: [14781.505 16803.799 18970.8  ]
+Iteration 3000, Error: [14779.452 16797.342 18961.875]
+Iteration 3100, Error: [14777.61  16791.418 18953.38 ]
+Iteration 3200, Error: [14775.965 16785.92  18945.223]
+Iteration 3300, Error: [14774.502 16780.832 18937.39 ]
+Iteration 3400, Error: [14773.206 16776.104 18929.875]
+Iteration 3500, Error: [14772.052 16771.781 18922.758]
+Iteration 3600, Error: [14771.028 16767.754 18915.799]
+Iteration 3700, Error: [14770.099 16764.035 18909.164]
+Iteration 3800, Error: [14769.259 16760.629 18902.725]
+Iteration 3900, Error: [14768.498 16757.445 18896.547]
+Iteration 4000, Error: [14767.794 16754.48  18890.549]
+Iteration 4100, Error: [14767.125 16751.78  18884.795]
+Iteration 4200, Error: [14766.515 16749.287 18879.158]
+Iteration 4300, Error: [14765.898 16747.041 18873.846]
+Iteration 4400, Error: [14765.315 16744.87  18868.59 ]
+Iteration 4500, Error: [14764.774 16742.957 18863.525]
+Iteration 4600, Error: [14764.232 16741.098 18858.598]
+Iteration 4700, Error: [14763.726 16739.467 18853.857]
+Iteration 4800, Error: [14763.217 16737.953 18849.291]
+Iteration 4900, Error: [14762.7295 16736.52   18844.87  ]
+Iteration 5000, Error: [14762.258 16735.277 18840.52 ]
+Solved in 80.5276 seconds
+Saved result to result_mine.jpg
+--------------------------------------------------------------------------------
+
+LIKWID/ERRORS:
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+No threads or regions defined in hash table
+Line 0:multigrid_vcycle-0
+ not a valid region description: multigrid_vcycle-0
+
+No regions could be found in Marker API result file.
+
+================================================================================
+
+RUNNING: benchmark_v2.py | TEST: test1 | CONFIG: Dual Core | GROUP: L2CACHE
+PROVES: Tests scaling on a single NUMA node/cluster.
+----------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz
+CPU type:	Intel Kabylake processor
+CPU clock:	1.90 GHz
+--------------------------------------------------------------------------------
+Loading images from test0...
+Initializing OpenMP solver...
+Number of variables to solve: 67840
+Running solver...
+Iteration 100, Error: [21011.324 18846.95  17212.04 ]
+Iteration 200, Error: [13933.581 12531.527 11852.265]
+Iteration 300, Error: [10750.915  9736.075  9379.625]
+Iteration 400, Error: [8890.637  8027.7275 7834.544 ]
+Iteration 500, Error: [7658.2583 6855.2783 6753.8438]
+Iteration 600, Error: [6761.357  5992.9897 5956.8916]
+Iteration 700, Error: [6081.3076 5323.4785 5345.503 ]
+Iteration 800, Error: [5556.667 4783.9   4862.648]
+Iteration 900, Error: [5144.5576 4332.7725 4469.381 ]
+Iteration 1000, Error: [4811.8604 3946.064  4142.796 ]
+Iteration 1100, Error: [4539.0796 3609.2598 3868.5554]
+Iteration 1200, Error: [4309.6714 3311.687  3634.862 ]
+Iteration 1300, Error: [4113.7124 3047.0608 3433.599 ]
+Iteration 1400, Error: [3940.0627 2811.0154 3258.2202]
+Iteration 1500, Error: [3783.7896 2600.0208 3104.0415]
+Iteration 1600, Error: [3642.399  2411.6191 2967.272 ]
+Iteration 1700, Error: [3514.6357 2242.7217 2843.972 ]
+Iteration 1800, Error: [3398.3057 2090.793  2732.0415]
+Iteration 1900, Error: [3292.321  1954.1223 2629.933 ]
+Iteration 2000, Error: [3195.5796 1831.4194 2535.901 ]
+Iteration 2100, Error: [3106.4736 1721.1116 2449.6904]
+Iteration 2200, Error: [3024.0227 1622.0198 2369.983 ]
+Iteration 2300, Error: [2947.4358 1533.2478 2296.1846]
+Iteration 2400, Error: [2876.0415 1453.5927 2227.439 ]
+Iteration 2500, Error: [2809.447  1382.403  2162.7627]
+Iteration 2600, Error: [2746.8499 1318.8813 2101.767 ]
+Iteration 2700, Error: [2688.4324 1262.3799 2044.3181]
+Iteration 2800, Error: [2633.4092 1212.3032 1989.84  ]
+Iteration 2900, Error: [2581.4424 1167.5809 1937.9749]
+Iteration 3000, Error: [2532.355  1126.7064 1888.1501]
+Iteration 3100, Error: [2485.9148 1089.5112 1840.6223]
+Iteration 3200, Error: [2441.8972 1055.6882 1795.0017]
+Iteration 3300, Error: [2400.026  1024.7214 1751.4824]
+Iteration 3400, Error: [2359.9146  996.4291 1709.6426]
+Iteration 3500, Error: [2321.281   970.4488 1669.5461]
+Iteration 3600, Error: [2284.3923  946.3862 1630.8916]
+Iteration 3700, Error: [2248.7905   924.16675 1593.7798 ]
+Iteration 3800, Error: [2214.5168  903.5432 1558.0637]
+Iteration 3900, Error: [2181.6096  884.5178 1523.668 ]
+Iteration 4000, Error: [2149.691    866.91614 1490.3179 ]
+Iteration 4100, Error: [2119.028    850.51294 1458.1194 ]
+Iteration 4200, Error: [2089.2783   835.27527 1427.0979 ]
+Iteration 4300, Error: [2060.6252   820.93933 1397.1775 ]
+Iteration 4400, Error: [2032.7928  807.4197 1368.1404]
+Iteration 4500, Error: [2006.1194  794.6382 1340.3088]
+Iteration 4600, Error: [1980.05    782.2514 1313.3007]
+Iteration 4700, Error: [1954.8763   770.51196 1286.7534 ]
+Iteration 4800, Error: [1930.6838  759.3326 1261.4341]
+Iteration 4900, Error: [1907.074   748.4272 1237.165 ]
+Iteration 5000, Error: [1883.7886   737.81165 1213.1846 ]
+Solved in 4.7417 seconds
+Saved result to result2.jpg
+--------------------------------------------------------------------------------
+
+LIKWID/ERRORS:
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+No threads or regions defined in hash table
+Line 0:grid-0
+ not a valid region description: grid-0
+
+No regions could be found in Marker API result file.
+
+================================================================================
+
+RUNNING: benchmark_openmp.py | TEST: test0 | THREADS: 8 | GROUP: L2CACHE
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz
+CPU type:	Intel Kabylake processor
+CPU clock:	1.90 GHz
+--------------------------------------------------------------------------------
+Loading images from test0...
+Initializing OpenMP solver...
+Number of variables to solve: 67840
+Running solver...
+Iteration 100, Error: [21011.324 18846.95  17212.04 ]
+Iteration 200, Error: [13933.581 12531.527 11852.265]
+Iteration 300, Error: [10750.915  9736.075  9379.625]
+Iteration 400, Error: [8890.637  8027.7275 7834.544 ]
+Iteration 500, Error: [7658.2583 6855.2783 6753.8438]
+Iteration 600, Error: [6761.357  5992.9897 5956.8916]
+Iteration 700, Error: [6081.3076 5323.4785 5345.503 ]
+Iteration 800, Error: [5556.667 4783.9   4862.648]
+Iteration 900, Error: [5144.5576 4332.7725 4469.381 ]
+Iteration 1000, Error: [4811.8604 3946.064  4142.796 ]
+Iteration 1100, Error: [4539.0796 3609.2598 3868.5554]
+Iteration 1200, Error: [4309.6714 3311.687  3634.862 ]
+Iteration 1300, Error: [4113.7124 3047.0608 3433.599 ]
+Iteration 1400, Error: [3940.0627 2811.0154 3258.2202]
+Iteration 1500, Error: [3783.7896 2600.0208 3104.0415]
+Iteration 1600, Error: [3642.399  2411.6191 2967.272 ]
+Iteration 1700, Error: [3514.6357 2242.7217 2843.972 ]
+Iteration 1800, Error: [3398.3057 2090.793  2732.0415]
+Iteration 1900, Error: [3292.321  1954.1223 2629.933 ]
+Iteration 2000, Error: [3195.5796 1831.4194 2535.901 ]
+Iteration 2100, Error: [3106.4736 1721.1116 2449.6904]
+Iteration 2200, Error: [3024.0227 1622.0198 2369.983 ]
+Iteration 2300, Error: [2947.4358 1533.2478 2296.1846]
+Iteration 2400, Error: [2876.0415 1453.5927 2227.439 ]
+Iteration 2500, Error: [2809.447  1382.403  2162.7627]
+Iteration 2600, Error: [2746.8499 1318.8813 2101.767 ]
+Iteration 2700, Error: [2688.4324 1262.3799 2044.3181]
+Iteration 2800, Error: [2633.4092 1212.3032 1989.84  ]
+Iteration 2900, Error: [2581.4424 1167.5809 1937.9749]
+Iteration 3000, Error: [2532.355  1126.7064 1888.1501]
+Iteration 3100, Error: [2485.9148 1089.5112 1840.6223]
+Iteration 3200, Error: [2441.8972 1055.6882 1795.0017]
+Iteration 3300, Error: [2400.026  1024.7214 1751.4824]
+Iteration 3400, Error: [2359.9146  996.4291 1709.6426]
+Iteration 3500, Error: [2321.281   970.4488 1669.5461]
+Iteration 3600, Error: [2284.3923  946.3862 1630.8916]
+Iteration 3700, Error: [2248.7905   924.16675 1593.7798 ]
+Iteration 3800, Error: [2214.5168  903.5432 1558.0637]
+Iteration 3900, Error: [2181.6096  884.5178 1523.668 ]
+Iteration 4000, Error: [2149.691    866.91614 1490.3179 ]
+Iteration 4100, Error: [2119.028    850.51294 1458.1194 ]
+Iteration 4200, Error: [2089.2783   835.27527 1427.0979 ]
+Iteration 4300, Error: [2060.6252   820.93933 1397.1775 ]
+Iteration 4400, Error: [2032.7928  807.4197 1368.1404]
+Iteration 4500, Error: [2006.1194  794.6382 1340.3088]
+Iteration 4600, Error: [1980.05    782.2514 1313.3007]
+Iteration 4700, Error: [1954.8763   770.51196 1286.7534 ]
+Iteration 4800, Error: [1930.6838  759.3326 1261.4341]
+Iteration 4900, Error: [1907.074   748.4272 1237.165 ]
+Iteration 5000, Error: [1883.7886   737.81165 1213.1846 ]
+Solved in 5.7381 seconds
+Saved result to result2.jpg
+--------------------------------------------------------------------------------
+
+LIKWID/ERRORS:
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+No threads or regions defined in hash table
+Line 0:grid-0
+ not a valid region description: grid-0
+
+No regions could be found in Marker API result file.
+
+================================================================================
+
+RUNNING: benchmark_openmp.py | TEST: test0 | THREADS: 8 | GROUP: L3CACHE
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz
+CPU type:	Intel Kabylake processor
+CPU clock:	1.90 GHz
+--------------------------------------------------------------------------------
+Loading images from test0...
+Initializing OpenMP solver...
+Number of variables to solve: 67840
+Running solver...
+Iteration 100, Error: [21011.324 18846.95  17212.04 ]
+Iteration 200, Error: [13933.581 12531.527 11852.265]
+Iteration 300, Error: [10750.915  9736.075  9379.625]
+Iteration 400, Error: [8890.637  8027.7275 7834.544 ]
+Iteration 500, Error: [7658.2583 6855.2783 6753.8438]
+Iteration 600, Error: [6761.357  5992.9897 5956.8916]
+Iteration 700, Error: [6081.3076 5323.4785 5345.503 ]
+Iteration 800, Error: [5556.667 4783.9   4862.648]
+Iteration 900, Error: [5144.5576 4332.7725 4469.381 ]
+Iteration 1000, Error: [4811.8604 3946.064  4142.796 ]
+Iteration 1100, Error: [4539.0796 3609.2598 3868.5554]
+Iteration 1200, Error: [4309.6714 3311.687  3634.862 ]
+Iteration 1300, Error: [4113.7124 3047.0608 3433.599 ]
+Iteration 1400, Error: [3940.0627 2811.0154 3258.2202]
+Iteration 1500, Error: [3783.7896 2600.0208 3104.0415]
+Iteration 1600, Error: [3642.399  2411.6191 2967.272 ]
+Iteration 1700, Error: [3514.6357 2242.7217 2843.972 ]
+Iteration 1800, Error: [3398.3057 2090.793  2732.0415]
+Iteration 1900, Error: [3292.321  1954.1223 2629.933 ]
+Iteration 2000, Error: [3195.5796 1831.4194 2535.901 ]
+Iteration 2100, Error: [3106.4736 1721.1116 2449.6904]
+Iteration 2200, Error: [3024.0227 1622.0198 2369.983 ]
+Iteration 2300, Error: [2947.4358 1533.2478 2296.1846]
+Iteration 2400, Error: [2876.0415 1453.5927 2227.439 ]
+Iteration 2500, Error: [2809.447  1382.403  2162.7627]
+Iteration 2600, Error: [2746.8499 1318.8813 2101.767 ]
+Iteration 2700, Error: [2688.4324 1262.3799 2044.3181]
+Iteration 2800, Error: [2633.4092 1212.3032 1989.84  ]
+Iteration 2900, Error: [2581.4424 1167.5809 1937.9749]
+Iteration 3000, Error: [2532.355  1126.7064 1888.1501]
+Iteration 3100, Error: [2485.9148 1089.5112 1840.6223]
+Iteration 3200, Error: [2441.8972 1055.6882 1795.0017]
+Iteration 3300, Error: [2400.026  1024.7214 1751.4824]
+Iteration 3400, Error: [2359.9146  996.4291 1709.6426]
+Iteration 3500, Error: [2321.281   970.4488 1669.5461]
+Iteration 3600, Error: [2284.3923  946.3862 1630.8916]
+Iteration 3700, Error: [2248.7905   924.16675 1593.7798 ]
+Iteration 3800, Error: [2214.5168  903.5432 1558.0637]
+Iteration 3900, Error: [2181.6096  884.5178 1523.668 ]
+Iteration 4000, Error: [2149.691    866.91614 1490.3179 ]
+Iteration 4100, Error: [2119.028    850.51294 1458.1194 ]
+Iteration 4200, Error: [2089.2783   835.27527 1427.0979 ]
+Iteration 4300, Error: [2060.6252   820.93933 1397.1775 ]
+Iteration 4400, Error: [2032.7928  807.4197 1368.1404]
+Iteration 4500, Error: [2006.1194  794.6382 1340.3088]
+Iteration 4600, Error: [1980.05    782.2514 1313.3007]
+Iteration 4700, Error: [1954.8763   770.51196 1286.7534 ]
+Iteration 4800, Error: [1930.6838  759.3326 1261.4341]
+Iteration 4900, Error: [1907.074   748.4272 1237.165 ]
+Iteration 5000, Error: [1883.7886   737.81165 1213.1846 ]
+Solved in 6.1441 seconds
+Saved result to result2.jpg
+--------------------------------------------------------------------------------
+
+LIKWID/ERRORS:
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+No threads or regions defined in hash table
+Line 0:grid-0
+ not a valid region description: grid-0
+
+No regions could be found in Marker API result file.
+
+================================================================================
+
+RUNNING: benchmark_openmp.py | TEST: test0 | THREADS: 8 | GROUP: MEM
+----------------------------------------------------------------------
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz
+CPU type:	Intel Kabylake processor
+CPU clock:	1.90 GHz
+--------------------------------------------------------------------------------
+Loading images from test1...
+Initializing OpenMP Multigrid v2 solver...
+Number of variables to solve: 631856
+Running solver...
+Iteration 100, Error: [20708.412 21700.492 24620.406]
+Iteration 200, Error: [17758.191 19071.576 21736.479]
+Iteration 300, Error: [16517.104 18104.982 20702.615]
+Iteration 400, Error: [15883.359 17698.693 20212.824]
+Iteration 500, Error: [15530.918 17486.855 19928.424]
+Iteration 600, Error: [15315.145 17360.428 19741.242]
+Iteration 700, Error: [15173.995 17272.527 19606.668]
+Iteration 800, Error: [15078.663 17206.25  19505.242]
+Iteration 900, Error: [15013.163 17154.129 19425.818]
+Iteration 1000, Error: [14967.509 17112.15  19362.498]
+Iteration 1100, Error: [14934.408 17077.514 19312.045]
+Iteration 1200, Error: [14909.217 17047.951 19271.957]
+Iteration 1300, Error: [14889.185 17021.6   19237.613]
+Iteration 1400, Error: [14872.835 16997.764 19207.26 ]
+Iteration 1500, Error: [14859.591 16976.072 19180.158]
+Iteration 1600, Error: [14848.697 16956.236 19155.836]
+Iteration 1700, Error: [14839.063 16937.994 19133.941]
+Iteration 1800, Error: [14830.5625 16921.238  19113.941 ]
+Iteration 1900, Error: [14823.04  16905.783 19095.701]
+Iteration 2000, Error: [14816.36  16891.559 19078.982]
+Iteration 2100, Error: [14810.445 16878.424 19063.523]
+Iteration 2200, Error: [14805.18  16866.26  19049.256]
+Iteration 2300, Error: [14800.498 16855.096 19035.865]
+Iteration 2400, Error: [14796.365 16844.758 19023.363]
+Iteration 2500, Error: [14792.663 16835.256 19011.605]
+Iteration 2600, Error: [14789.363 16826.432 19000.557]
+Iteration 2700, Error: [14786.431 16818.234 18990.041]
+Iteration 2800, Error: [14783.834 16810.725 18980.209]
+Iteration 2900, Error: [14781.505 16803.799 18970.8  ]
+Iteration 3000, Error: [14779.452 16797.342 18961.875]
+Iteration 3100, Error: [14777.61  16791.418 18953.38 ]
+Iteration 3200, Error: [14775.965 16785.92  18945.223]
+Iteration 3300, Error: [14774.502 16780.832 18937.39 ]
+Iteration 3400, Error: [14773.206 16776.104 18929.875]
+Iteration 3500, Error: [14772.052 16771.781 18922.758]
+Iteration 3600, Error: [14771.028 16767.754 18915.799]
+Iteration 3700, Error: [14770.099 16764.035 18909.164]
+Iteration 3800, Error: [14769.259 16760.629 18902.725]
+Iteration 3900, Error: [14768.498 16757.445 18896.547]
+Iteration 4000, Error: [14767.794 16754.48  18890.549]
+Iteration 4100, Error: [14767.125 16751.78  18884.795]
+Iteration 4200, Error: [14766.515 16749.287 18879.158]
+Iteration 4300, Error: [14765.898 16747.041 18873.846]
+Iteration 4400, Error: [14765.315 16744.87  18868.59 ]
+Iteration 4500, Error: [14764.774 16742.957 18863.525]
+Iteration 4600, Error: [14764.232 16741.098 18858.598]
+Iteration 4700, Error: [14763.726 16739.467 18853.857]
+Iteration 4800, Error: [14763.217 16737.953 18849.291]
+Iteration 4900, Error: [14762.7295 16736.52   18844.87  ]
+Iteration 5000, Error: [14762.258 16735.277 18840.52 ]
+Solved in 128.9534 seconds
+Saved result to result_v2.jpg
+--------------------------------------------------------------------------------
+
+LIKWID/ERRORS:
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+No threads or regions defined in hash table
+Line 0:multigrid_vcycle-0
+ not a valid region description: multigrid_vcycle-0
+
+No regions could be found in Marker API result file.
+
+================================================================================
+
+RUNNING: benchmark_v3.py | TEST: test1 | CONFIG: Dual Core | GROUP: L2CACHE
+PROVES: Tests scaling on a single NUMA node/cluster.
+----------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz
+CPU type:	Intel Kabylake processor
+CPU clock:	1.90 GHz
+--------------------------------------------------------------------------------
+Loading images from test1...
+Initializing OpenMP Solver v3...
+Number of variables to solve: 631856
+Running solver...
+Iteration 100, Error: [29965.518 25021.916 51990.47 ]
+Iteration 200, Error: [21868.605 17313.846 30486.506]
+Iteration 300, Error: [18118.273 14115.897 22390.357]
+Iteration 400, Error: [15687.385 12207.343 17934.662]
+Iteration 500, Error: [13906.369 10863.148 15122.57 ]
+Iteration 600, Error: [12517.29   9841.51  13170.795]
+Iteration 700, Error: [11386.973  9017.031 11706.939]
+Iteration 800, Error: [10442.551  8324.838 10567.492]
+Iteration 900, Error: [9638.79   7730.9404 9654.9795]
+Iteration 1000, Error: [8946.986 7212.289 8902.216]
+Iteration 1100, Error: [8346.208  6752.6743 8265.651 ]
+Iteration 1200, Error: [7818.7466 6340.463  7717.5933]
+Iteration 1300, Error: [7351.0586 5967.4854 7236.5806]
+Iteration 1400, Error: [6932.5913 5627.785  6808.7363]
+Iteration 1500, Error: [6555.824  5316.597  6425.5117]
+Iteration 1600, Error: [6214.6045 5030.281  6080.4375]
+Iteration 1700, Error: [5903.49   4765.9136 5768.402 ]
+Iteration 1800, Error: [5618.249 4521.04  5485.35 ]
+Iteration 1900, Error: [5355.265  4293.6597 5227.879 ]
+Iteration 2000, Error: [5111.7603 4082.0315 4991.6606]
+Iteration 2100, Error: [4885.723  3884.735  4774.5454]
+Iteration 2200, Error: [4675.3857 3700.5725 4574.7554]
+Iteration 2300, Error: [4479.297  3528.4998 4390.4033]
+Iteration 2400, Error: [4296.1997 3367.553  4219.964 ]
+Iteration 2500, Error: [4124.759  3216.8838 4062.2578]
+Iteration 2600, Error: [3963.3079 3075.8357 3915.313 ]
+Iteration 2700, Error: [3810.9663 2943.5845 3777.9033]
+Iteration 2800, Error: [3667.0054 2819.6406 3649.077 ]
+Iteration 2900, Error: [3530.7932 2703.3254 3528.108 ]
+Iteration 3000, Error: [3401.7273 2594.266  3414.462 ]
+Iteration 3100, Error: [3279.28   2491.818  3307.5188]
+Iteration 3200, Error: [3162.9165 2395.591  3206.6243]
+Iteration 3300, Error: [3052.2117 2305.076  3111.5767]
+Iteration 3400, Error: [2946.7249 2219.718  3021.6619]
+Iteration 3500, Error: [2846.0986 2139.1775 2936.7986]
+Iteration 3600, Error: [2750.0237 2063.2207 2856.521 ]
+Iteration 3700, Error: [2658.2576 1991.5217 2780.5078]
+Iteration 3800, Error: [2570.5903 1923.8096 2708.4504]
+Iteration 3900, Error: [2486.7688 1859.8665 2640.014 ]
+Iteration 4000, Error: [2406.6104 1799.5059 2575.1782]
+Iteration 4100, Error: [2329.9087 1742.639  2513.56  ]
+Iteration 4200, Error: [2256.5146 1688.9375 2455.0688]
+Iteration 4300, Error: [2186.22   1638.1406 2399.3506]
+Iteration 4400, Error: [2118.905  1590.1554 2346.3398]
+Iteration 4500, Error: [2054.4001 1544.7983 2295.8616]
+Iteration 4600, Error: [1992.5648 1501.8488 2247.7107]
+Iteration 4700, Error: [1933.3016 1461.2275 2201.7869]
+Iteration 4800, Error: [1876.4362 1422.7588 2157.986 ]
+Iteration 4900, Error: [1821.8717 1386.384  2116.1292]
+Iteration 5000, Error: [1769.5142 1351.932  2075.997 ]
+Solved in 35.4352 seconds
+Saved result to result_v3.jpg
+--------------------------------------------------------------------------------
+
+LIKWID/ERRORS:
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+No threads or regions defined in hash table
+Line 0:v3_compute-0
+ not a valid region description: v3_compute-0
+
+No regions could be found in Marker API result file.
+
+================================================================================
+
+RUNNING: benchmark_v4.py | TEST: test1 | CONFIG: Dual Core | GROUP: L2CACHE
+PROVES: Tests scaling on a single NUMA node/cluster.
+----------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz
+CPU type:	Intel Kabylake processor
+CPU clock:	1.90 GHz
+--------------------------------------------------------------------------------
+Loading images from test1...
+Initializing OpenMP Solver v4...
+Number of variables to solve: 631856
+Running solver...
+Iteration 100, Error: [39571.508 32290.834 47272.55 ]
+Iteration 200, Error: [18826.205 13957.751 23978.215]
+Iteration 300, Error: [ 8757.535  9760.142 15278.933]
+Iteration 400, Error: [ 5786.1284  6613.3525 11098.96  ]
+Iteration 500, Error: [3402.0256 5233.911  8544.873 ]
+Iteration 600, Error: [2631.2043 3782.2715 7241.983 ]
+Iteration 700, Error: [1697.6106 3095.2861 6144.8467]
+Iteration 800, Error: [1429.6941 2298.9263 5534.065 ]
+Iteration 900, Error: [ 998.0367 1914.7257 4836.8286]
+Iteration 1000, Error: [ 911.28827 1447.6469  4437.419  ]
+Solved in 9.9538 seconds
+Saved result to result_v4.jpg
+--------------------------------------------------------------------------------
+
+LIKWID/ERRORS:
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+No threads or regions defined in hash table
+Line 0:v4_compute-0
+ not a valid region description: v4_compute-0
+
+No regions could be found in Marker API result file.
+
+================================================================================
+
+RUNNING: benchmark_v5.py | TEST: test1 | CONFIG: Dual Core | GROUP: L2CACHE
+PROVES: Tests scaling on a single NUMA node/cluster.
+----------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz
+CPU type:	Intel Kabylake processor
+CPU clock:	1.90 GHz
+--------------------------------------------------------------------------------
+Loading images from test1...
+Initializing OpenMP Solver v5...
+Number of variables to solve: 631856
+Running solver...
+Iteration 100, Error: [ 6498.7886 12466.802  32973.67  ]
+Iteration 200, Error: [ 1970.1371  3668.8108 15005.491 ]
+Iteration 300, Error: [ 1668.4271  2484.6023 11466.913 ]
+Iteration 400, Error: [ 884.073  1483.0834 7370.4863]
+Iteration 500, Error: [ 888.99554 1337.3767  6722.6357 ]
+Iteration 600, Error: [ 521.5455  911.63   5094.5425]
+Iteration 700, Error: [ 534.9268  847.876  5032.5884]
+Iteration 800, Error: [ 324.23184  605.10516 4046.3223 ]
+Iteration 900, Error: [ 332.75537  572.09845 4066.6917 ]
+Iteration 1000, Error: [ 206.28548  424.04776 3333.7776 ]
+Iteration 1100, Error: [ 210.6947   406.34067 3358.1987 ]
+Iteration 1200, Error: [ 133.89969  313.0178  2780.4595 ]
+Iteration 1300, Error: [ 135.34981  303.61234 2793.4072 ]
+Iteration 1400, Error: [  89.21688  243.08694 2328.3164 ]
+Iteration 1500, Error: [  88.11544  234.99591 2331.462  ]
+Iteration 1600, Error: [  61.878803  196.54282  1950.167   ]
+Iteration 1700, Error: [  59.292236  189.03247  1948.9945  ]
+Iteration 1800, Error: [  44.948887  163.0351   1636.1033  ]
+Iteration 1900, Error: [  42.209045  156.35747  1628.2246  ]
+Iteration 2000, Error: [  34.61434  138.93398 1374.644  ]
+Iteration 2100, Error: [  32.714382  132.1388   1360.8082  ]
+Iteration 2200, Error: [  28.770132  119.39049  1154.6025  ]
+Iteration 2300, Error: [  27.822454  113.99417  1135.9222  ]
+Iteration 2400, Error: [ 25.69626 105.52947 970.2809 ]
+Iteration 2500, Error: [ 25.240192  99.716415 949.196   ]
+Iteration 2600, Error: [ 24.228466  93.38154  817.0665  ]
+Iteration 2700, Error: [ 23.755886  89.10932  793.75305 ]
+Iteration 2800, Error: [ 23.31479  84.24453 690.69617]
+Iteration 2900, Error: [ 23.110678  81.5277   661.65735 ]
+Iteration 3000, Error: [ 22.814129  77.850365 585.8865  ]
+Iteration 3100, Error: [ 22.815285  75.643776 554.6886  ]
+Iteration 3200, Error: [ 22.44351  73.46668 497.09525]
+Iteration 3300, Error: [ 22.344486  71.29107  465.3045  ]
+Iteration 3400, Error: [ 22.039614  69.744965 424.26053 ]
+Iteration 3500, Error: [ 21.955965  68.40259  393.08582 ]
+Iteration 3600, Error: [ 21.579317  67.464    364.07373 ]
+Iteration 3700, Error: [ 21.638021  66.384125 333.28796 ]
+Iteration 3800, Error: [ 20.992758  65.923004 314.26184 ]
+Iteration 3900, Error: [ 20.768555  64.95594  286.22375 ]
+Iteration 4000, Error: [ 20.203892  64.45577  272.48425 ]
+Iteration 4100, Error: [ 20.337233  63.961975 248.1915  ]
+Iteration 4200, Error: [ 20.102795  63.5498   238.77919 ]
+Iteration 4300, Error: [ 19.091364  62.99599  218.42097 ]
+Iteration 4400, Error: [ 18.575397  62.892414 211.72815 ]
+Iteration 4500, Error: [ 19.108625  62.541653 195.81134 ]
+Iteration 4600, Error: [ 18.487274  62.33731  189.19588 ]
+Iteration 4700, Error: [ 17.890112  62.298943 178.0556  ]
+Iteration 4800, Error: [ 18.143375  62.200195 173.20807 ]
+Iteration 4900, Error: [ 17.533234  62.026516 164.29411 ]
+Iteration 5000, Error: [ 17.528618  61.990505 162.368   ]
+Solved in 243.4243 seconds
+Saved result to result_v5.jpg
+--------------------------------------------------------------------------------
+
+LIKWID/ERRORS:
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+No threads or regions defined in hash table
+Line 0:v5_compute-0
+ not a valid region description: v5_compute-0
+
+No regions could be found in Marker API result file.
+
+================================================================================
+
+RUNNING: benchmark_openmp.py | TEST: test1 | CONFIG: Dual Core | GROUP: L3CACHE
+PROVES: Tests scaling on a single NUMA node/cluster.
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz
+CPU type:	Intel Kabylake processor
+CPU clock:	1.90 GHz
+--------------------------------------------------------------------------------
+Loading images from test1...
+Initializing OpenMP solver...
+Number of variables to solve: 631856
+Running solver...
+Iteration 100, Error: [180021.77 175237.75 198431.11]
+Iteration 200, Error: [133151.36 124261.95 140244.53]
+Iteration 300, Error: [113066.4   102227.31  116898.914]
+Iteration 400, Error: [101540.73   89386.195 104024.35 ]
+Iteration 500, Error: [93959.766 80679.81  95824.63 ]
+Iteration 600, Error: [88534.96 74357.96 90151.96]
+Iteration 700, Error: [84416.6  69557.69 85979.95]
+Iteration 800, Error: [81164.81 65777.   82776.84]
+Iteration 900, Error: [78538.875 62718.88  80224.79 ]
+Iteration 1000, Error: [76385.266 60192.28  78130.87 ]
+Iteration 1100, Error: [74596.74  58071.215 76391.38 ]
+Iteration 1200, Error: [73088.016 56255.652 74922.42 ]
+Iteration 1300, Error: [71795.125 54677.08  73663.3  ]
+Iteration 1400, Error: [70675.766 53290.254 72565.79 ]
+Iteration 1500, Error: [69694.9  52058.64 71587.1 ]
+Iteration 1600, Error: [68824.05  50958.484 70706.734]
+Iteration 1700, Error: [68041.79 49966.29 69902.76]
+Iteration 1800, Error: [67329.836 49067.688 69161.88 ]
+Iteration 1900, Error: [66679.27  48248.895 68479.56 ]
+Iteration 2000, Error: [66079.51  47493.777 67845.805]
+Iteration 2100, Error: [65528.246 46798.527 67255.766]
+Iteration 2200, Error: [65018.16  46148.812 66708.81 ]
+Iteration 2300, Error: [64544.6  45541.14 66195.74]
+Iteration 2400, Error: [64107.938 44969.152 65713.31 ]
+Iteration 2500, Error: [63703.863 44430.434 65254.22 ]
+Iteration 2600, Error: [63331.312 43919.57  64818.305]
+Iteration 2700, Error: [62982.973 43434.992 64401.414]
+Iteration 2800, Error: [62657.453 42971.89  64002.77 ]
+Iteration 2900, Error: [62351.02  42528.516 63619.723]
+Iteration 3000, Error: [62060.805 42105.66  63250.918]
+Iteration 3100, Error: [61782.45  41699.83  62897.832]
+Iteration 3200, Error: [61517.742 41310.45  62557.008]
+Iteration 3300, Error: [61262.45  40935.863 62228.727]
+Iteration 3400, Error: [61017.78 40574.95 61909.51]
+Iteration 3500, Error: [60781.086 40228.082 61603.04 ]
+Iteration 3600, Error: [60551.492 39893.55  61308.82 ]
+Iteration 3700, Error: [60330.703 39569.242 61022.984]
+Iteration 3800, Error: [60116.586 39255.836 60746.14 ]
+Iteration 3900, Error: [59907.785 38953.65  60479.297]
+Iteration 4000, Error: [59706.316 38659.35  60220.156]
+Iteration 4100, Error: [59509.027 38375.023 59969.633]
+Iteration 4200, Error: [59319.062 38097.086 59727.082]
+Iteration 4300, Error: [59131.37  37828.582 59493.664]
+Iteration 4400, Error: [58948.445 37567.67  59266.594]
+Iteration 4500, Error: [58769.086 37313.293 59045.938]
+Iteration 4600, Error: [58593.14  37066.363 58833.08 ]
+Iteration 4700, Error: [58420.438 36826.555 58626.41 ]
+Iteration 4800, Error: [58249.92  36592.535 58422.36 ]
+Iteration 4900, Error: [58081.027 36365.254 58225.113]
+Iteration 5000, Error: [57915.74  36143.81  58032.805]
+Solved in 70.0485 seconds
+Saved result to result2.jpg
+--------------------------------------------------------------------------------
+
+LIKWID/ERRORS:
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+No threads or regions defined in hash table
+Line 0:grid-0
+ not a valid region description: grid-0
+
+No regions could be found in Marker API result file.
+
+================================================================================
+
+RUNNING: benchmark_mine.py | TEST: test1 | CONFIG: Dual Core | GROUP: L3CACHE
+PROVES: Tests scaling on a single NUMA node/cluster.
+------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz
+CPU type:	Intel Kabylake processor
+CPU clock:	1.90 GHz
+--------------------------------------------------------------------------------
+Loading images from test1...
+Initializing OpenMP Multigrid solver...
+Number of variables to solve: 631856
+Running solver...
+Iteration 100, Error: [20708.412 21700.492 24620.406]
+Iteration 200, Error: [17758.191 19071.576 21736.479]
+Iteration 300, Error: [16517.104 18104.982 20702.615]
+Iteration 400, Error: [15883.359 17698.693 20212.824]
+Iteration 500, Error: [15530.918 17486.855 19928.424]
+Iteration 600, Error: [15315.145 17360.428 19741.242]
+Iteration 700, Error: [15173.995 17272.527 19606.668]
+Iteration 800, Error: [15078.663 17206.25  19505.242]
+Iteration 900, Error: [15013.163 17154.129 19425.818]
+Iteration 1000, Error: [14967.509 17112.15  19362.498]
+Iteration 1100, Error: [14934.408 17077.514 19312.045]
+Iteration 1200, Error: [14909.217 17047.951 19271.957]
+Iteration 1300, Error: [14889.185 17021.6   19237.613]
+Iteration 1400, Error: [14872.835 16997.764 19207.26 ]
+Iteration 1500, Error: [14859.591 16976.072 19180.158]
+Iteration 1600, Error: [14848.697 16956.236 19155.836]
+Iteration 1700, Error: [14839.063 16937.994 19133.941]
+Iteration 1800, Error: [14830.5625 16921.238  19113.941 ]
+Iteration 1900, Error: [14823.04  16905.783 19095.701]
+Iteration 2000, Error: [14816.36  16891.559 19078.982]
+Iteration 2100, Error: [14810.445 16878.424 19063.523]
+Iteration 2200, Error: [14805.18  16866.26  19049.256]
+Iteration 2300, Error: [14800.498 16855.096 19035.865]
+Iteration 2400, Error: [14796.365 16844.758 19023.363]
+Iteration 2500, Error: [14792.663 16835.256 19011.605]
+Iteration 2600, Error: [14789.363 16826.432 19000.557]
+Iteration 2700, Error: [14786.431 16818.234 18990.041]
+Iteration 2800, Error: [14783.834 16810.725 18980.209]
+Iteration 2900, Error: [14781.505 16803.799 18970.8  ]
+Iteration 3000, Error: [14779.452 16797.342 18961.875]
+Iteration 3100, Error: [14777.61  16791.418 18953.38 ]
+Iteration 3200, Error: [14775.965 16785.92  18945.223]
+Iteration 3300, Error: [14774.502 16780.832 18937.39 ]
+Iteration 3400, Error: [14773.206 16776.104 18929.875]
+Iteration 3500, Error: [14772.052 16771.781 18922.758]
+Iteration 3600, Error: [14771.028 16767.754 18915.799]
+Iteration 3700, Error: [14770.099 16764.035 18909.164]
+Iteration 3800, Error: [14769.259 16760.629 18902.725]
+Iteration 3900, Error: [14768.498 16757.445 18896.547]
+Iteration 4000, Error: [14767.794 16754.48  18890.549]
+Iteration 4100, Error: [14767.125 16751.78  18884.795]
+Iteration 4200, Error: [14766.515 16749.287 18879.158]
+Iteration 4300, Error: [14765.898 16747.041 18873.846]
+Iteration 4400, Error: [14765.315 16744.87  18868.59 ]
+Iteration 4500, Error: [14764.774 16742.957 18863.525]
+Iteration 4600, Error: [14764.232 16741.098 18858.598]
+Iteration 4700, Error: [14763.726 16739.467 18853.857]
+Iteration 4800, Error: [14763.217 16737.953 18849.291]
+Iteration 4900, Error: [14762.7295 16736.52   18844.87  ]
+Iteration 5000, Error: [14762.258 16735.277 18840.52 ]
+Solved in 51.1606 seconds
+Saved result to result_mine.jpg
+--------------------------------------------------------------------------------
+
+LIKWID/ERRORS:
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+No threads or regions defined in hash table
+Line 0:multigrid_vcycle-0
+ not a valid region description: multigrid_vcycle-0
+
+No regions could be found in Marker API result file.
+
+================================================================================
+
+RUNNING: benchmark_v2.py | TEST: test1 | CONFIG: Dual Core | GROUP: L3CACHE
+PROVES: Tests scaling on a single NUMA node/cluster.
+----------------------------------------------------------------------------------------------------------------------------------

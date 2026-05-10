@@ -1,0 +1,755 @@
+Benchmark session — 2026-05-10 16:35:02.516869
+Threads: 8 | CPUs: 0-7 | Tests: test0, test1, test2, test3, test4
+======================================================================
+
+######################################################################
+# TEST PREFIX: test0
+######################################################################
+
+======================================================================
+[2026-05-10 16:35:02.517157] [test0] likwid -g MEM → benchmark_mine.py
+======================================================================
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz
+CPU type:	Intel Kabylake processor
+CPU clock:	1.90 GHz
+--------------------------------------------------------------------------------
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Running without Marker API. Activate Marker API with -m on commandline.
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Loading images from test0...
+Initializing OpenMP Multigrid solver...
+Number of variables to solve: 67840
+Running solver...
+Iteration 100, Error: [7107.9126 6641.9326 4792.423 ]
+Iteration 200, Error: [6755.605  6327.9434 4530.405 ]
+Iteration 300, Error: [6654.511  6250.1245 4405.263 ]
+Iteration 400, Error: [6625.5684 6215.874  4324.034 ]
+Iteration 500, Error: [6612.3154 6194.8    4270.1245]
+Iteration 600, Error: [6604.1733 6181.242  4233.401 ]
+Iteration 700, Error: [6598.951  6172.257  4207.9463]
+Iteration 800, Error: [6595.4976 6166.189  4190.2617]
+Iteration 900, Error: [6593.19  6162.01  4177.703]
+Iteration 1000, Error: [6591.5938 6159.087  4168.6973]
+Iteration 1100, Error: [6590.5107 6157.037  4162.2314]
+Iteration 1200, Error: [6589.7354 6155.5967 4157.6064]
+Iteration 1300, Error: [6589.1963 6154.57   4154.2646]
+Iteration 1400, Error: [6588.854 6153.824 4151.849]
+Iteration 1500, Error: [6588.617 6153.324 4150.105]
+Iteration 1600, Error: [6588.4844 6152.9824 4148.8364]
+Iteration 1700, Error: [6588.4053 6152.7495 4147.966 ]
+Iteration 1800, Error: [6588.3633 6152.601  4147.337 ]
+Iteration 1900, Error: [6588.334  6152.528  4146.9116]
+Iteration 2000, Error: [6588.3237 6152.492  4146.632 ]
+Iteration 2100, Error: [6588.3037 6152.4453 4146.446 ]
+Iteration 2200, Error: [6588.3154 6152.4517 4146.336 ]
+Iteration 2300, Error: [6588.3423 6152.439  4146.2437]
+Iteration 2400, Error: [6588.33   6152.439  4146.2236]
+Iteration 2500, Error: [6588.334  6152.4546 4146.1836]
+Iteration 2600, Error: [6588.3335 6152.4585 4146.176 ]
+Iteration 2700, Error: [6588.335  6152.441  4146.1763]
+Iteration 2800, Error: [6588.3496 6152.458  4146.149 ]
+Iteration 2900, Error: [6588.3457 6152.4688 4146.159 ]
+Iteration 3000, Error: [6588.3223 6152.45   4146.1436]
+Iteration 3100, Error: [6588.3486 6152.4526 4146.172 ]
+Iteration 3200, Error: [6588.3525 6152.4575 4146.141 ]
+Iteration 3300, Error: [6588.341  6152.4595 4146.166 ]
+Iteration 3400, Error: [6588.3267 6152.444  4146.16  ]
+Iteration 3500, Error: [6588.3438 6152.4526 4146.1753]
+Iteration 3600, Error: [6588.338  6152.4453 4146.1606]
+Iteration 3700, Error: [6588.3257 6152.4736 4146.181 ]
+Iteration 3800, Error: [6588.354  6152.4536 4146.1475]
+Iteration 3900, Error: [6588.3306 6152.4507 4146.1772]
+Iteration 4000, Error: [6588.3335 6152.4556 4146.153 ]
+Iteration 4100, Error: [6588.347  6152.4463 4146.1587]
+Iteration 4200, Error: [6588.3413 6152.4556 4146.1514]
+Iteration 4300, Error: [6588.3276 6152.447  4146.159 ]
+Iteration 4400, Error: [6588.346 6152.45  4146.175]
+Iteration 4500, Error: [6588.3335 6152.474  4146.1694]
+Iteration 4600, Error: [6588.334  6152.4507 4146.176 ]
+Iteration 4700, Error: [6588.345  6152.4766 4146.1465]
+Iteration 4800, Error: [6588.3228 6152.4473 4146.1665]
+Iteration 4900, Error: [6588.327 6152.454 4146.149]
+Iteration 5000, Error: [6588.3354 6152.4585 4146.169 ]
+Solved in 1.6174 seconds
+Saved result to result_mine.jpg
+--------------------------------------------------------------------------------
+Group 1: MEM
++-----------------------+---------+------------+------------+------------+------------+------------+------------+------------+------------+
+|         Event         | Counter | HWThread 0 | HWThread 1 | HWThread 2 | HWThread 3 | HWThread 4 | HWThread 5 | HWThread 6 | HWThread 7 |
++-----------------------+---------+------------+------------+------------+------------+------------+------------+------------+------------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 5297033662 | 6704141689 | 6691579681 | 7075796603 | 6875725232 | 6489093059 | 5832991537 | 4335774295 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 3543045446 | 4347487287 | 3938801340 | 3961332526 | 3828823195 | 3930069479 | 3943344917 | 3015123480 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 2229098049 | 2714610166 | 2471374301 | 2484320742 | 2401308885 | 2466330072 | 2476098659 | 1890016856 |
+|       DRAM_READS      | MBOX0C1 |   39555912 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
+|      DRAM_WRITES      | MBOX0C2 |   12460761 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
++-----------------------+---------+------------+------------+------------+------------+------------+------------+------------+------------+
+
++----------------------------+---------+-------------+------------+------------+--------------+
+|            Event           | Counter |     Sum     |     Min    |     Max    |      Avg     |
++----------------------------+---------+-------------+------------+------------+--------------+
+|   INSTR_RETIRED_ANY STAT   |  FIXC0  | 49302135758 | 4335774295 | 7075796603 | 6.162767e+09 |
+| CPU_CLK_UNHALTED_CORE STAT |  FIXC1  | 30508027670 | 3015123480 | 4347487287 | 3.813503e+09 |
+|  CPU_CLK_UNHALTED_REF STAT |  FIXC2  | 19133157730 | 1890016856 | 2714610166 | 2.391645e+09 |
+|       DRAM_READS STAT      | MBOX0C1 |    39555912 |          0 |   39555912 |      4944489 |
+|      DRAM_WRITES STAT      | MBOX0C2 |    12460761 |          0 |   12460761 | 1.557595e+06 |
++----------------------------+---------+-------------+------------+------------+--------------+
+
++-----------------------------------+------------+------------+------------+------------+------------+------------+------------+------------+
+|               Metric              | HWThread 0 | HWThread 1 | HWThread 2 | HWThread 3 | HWThread 4 | HWThread 5 | HWThread 6 | HWThread 7 |
++-----------------------------------+------------+------------+------------+------------+------------+------------+------------+------------+
+|        Runtime (RDTSC) [s]        |     1.8534 |     1.8534 |     1.8534 |     1.8534 |     1.8534 |     1.8534 |     1.8534 |     1.8534 |
+|        Runtime unhalted [s]       |     1.8648 |     2.2882 |     2.0731 |     2.0849 |     2.0152 |     2.0685 |     2.0754 |     1.5869 |
+|            Clock [MHz]            |  3019.9597 |  3042.8774 |  3028.1623 |  3029.6136 |  3029.4995 |  3027.6288 |  3025.8711 |  3031.0495 |
+|                CPI                |     0.6689 |     0.6485 |     0.5886 |     0.5598 |     0.5569 |     0.6056 |     0.6760 |     0.6954 |
+|  Memory load bandwidth [MBytes/s] |  1365.9249 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
+|  Memory load data volume [GBytes] |     2.5316 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
+| Memory evict bandwidth [MBytes/s] |   430.2888 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
+| Memory evict data volume [GBytes] |     0.7975 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
+|    Memory bandwidth [MBytes/s]    |  1796.2137 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
+|    Memory data volume [GBytes]    |     3.3291 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
++-----------------------------------+------------+------------+------------+------------+------------+------------+------------+------------+
+
++----------------------------------------+------------+-----------+-----------+-----------+
+|                 Metric                 |     Sum    |    Min    |    Max    |    Avg    |
++----------------------------------------+------------+-----------+-----------+-----------+
+|        Runtime (RDTSC) [s] STAT        |    14.8272 |    1.8534 |    1.8534 |    1.8534 |
+|        Runtime unhalted [s] STAT       |    16.0570 |    1.5869 |    2.2882 |    2.0071 |
+|            Clock [MHz] STAT            | 24234.6619 | 3019.9597 | 3042.8774 | 3029.3327 |
+|                CPI STAT                |     4.9997 |    0.5569 |    0.6954 |    0.6250 |
+|  Memory load bandwidth [MBytes/s] STAT |  1365.9249 |         0 | 1365.9249 |  170.7406 |
+|  Memory load data volume [GBytes] STAT |     2.5316 |         0 |    2.5316 |    0.3165 |
+| Memory evict bandwidth [MBytes/s] STAT |   430.2888 |         0 |  430.2888 |   53.7861 |
+| Memory evict data volume [GBytes] STAT |     0.7975 |         0 |    0.7975 |    0.0997 |
+|    Memory bandwidth [MBytes/s] STAT    |  1796.2137 |         0 | 1796.2137 |  224.5267 |
+|    Memory data volume [GBytes] STAT    |     3.3291 |         0 |    3.3291 |    0.4161 |
++----------------------------------------+------------+-----------+-----------+-----------+
+
+
+======================================================================
+[2026-05-10 16:35:06.658846] [test0] likwid -g L2CACHE → benchmark_mine.py
+======================================================================
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz
+CPU type:	Intel Kabylake processor
+CPU clock:	1.90 GHz
+--------------------------------------------------------------------------------
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Running without Marker API. Activate Marker API with -m on commandline.
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Loading images from test0...
+Initializing OpenMP Multigrid solver...
+Number of variables to solve: 67840
+Running solver...
+Iteration 100, Error: [7107.9126 6641.9326 4792.423 ]
+Iteration 200, Error: [6755.605  6327.9434 4530.405 ]
+Iteration 300, Error: [6654.511  6250.1245 4405.263 ]
+Iteration 400, Error: [6625.5684 6215.874  4324.034 ]
+Iteration 500, Error: [6612.3154 6194.8    4270.1245]
+Iteration 600, Error: [6604.1733 6181.242  4233.401 ]
+Iteration 700, Error: [6598.951  6172.257  4207.9463]
+Iteration 800, Error: [6595.4976 6166.189  4190.2617]
+Iteration 900, Error: [6593.19  6162.01  4177.703]
+Iteration 1000, Error: [6591.5938 6159.087  4168.6973]
+Iteration 1100, Error: [6590.5107 6157.037  4162.2314]
+Iteration 1200, Error: [6589.7354 6155.5967 4157.6064]
+Iteration 1300, Error: [6589.1963 6154.57   4154.2646]
+Iteration 1400, Error: [6588.854 6153.824 4151.849]
+Iteration 1500, Error: [6588.617 6153.324 4150.105]
+Iteration 1600, Error: [6588.4844 6152.9824 4148.8364]
+Iteration 1700, Error: [6588.4053 6152.7495 4147.966 ]
+Iteration 1800, Error: [6588.3633 6152.601  4147.337 ]
+Iteration 1900, Error: [6588.334  6152.528  4146.9116]
+Iteration 2000, Error: [6588.3237 6152.492  4146.632 ]
+Iteration 2100, Error: [6588.3037 6152.4453 4146.446 ]
+Iteration 2200, Error: [6588.3154 6152.4517 4146.336 ]
+Iteration 2300, Error: [6588.3423 6152.439  4146.2437]
+Iteration 2400, Error: [6588.33   6152.439  4146.2236]
+Iteration 2500, Error: [6588.334  6152.4546 4146.1836]
+Iteration 2600, Error: [6588.3335 6152.4585 4146.176 ]
+Iteration 2700, Error: [6588.335  6152.441  4146.1763]
+Iteration 2800, Error: [6588.3496 6152.458  4146.149 ]
+Iteration 2900, Error: [6588.3457 6152.4688 4146.159 ]
+Iteration 3000, Error: [6588.3223 6152.45   4146.1436]
+Iteration 3100, Error: [6588.3486 6152.4526 4146.172 ]
+Iteration 3200, Error: [6588.3525 6152.4575 4146.141 ]
+Iteration 3300, Error: [6588.341  6152.4595 4146.166 ]
+Iteration 3400, Error: [6588.3267 6152.444  4146.16  ]
+Iteration 3500, Error: [6588.3438 6152.4526 4146.1753]
+Iteration 3600, Error: [6588.338  6152.4453 4146.1606]
+Iteration 3700, Error: [6588.3257 6152.4736 4146.181 ]
+Iteration 3800, Error: [6588.354  6152.4536 4146.1475]
+Iteration 3900, Error: [6588.3306 6152.4507 4146.1772]
+Iteration 4000, Error: [6588.3335 6152.4556 4146.153 ]
+Iteration 4100, Error: [6588.347  6152.4463 4146.1587]
+Iteration 4200, Error: [6588.3413 6152.4556 4146.1514]
+Iteration 4300, Error: [6588.3276 6152.447  4146.159 ]
+Iteration 4400, Error: [6588.346 6152.45  4146.175]
+Iteration 4500, Error: [6588.3335 6152.474  4146.1694]
+Iteration 4600, Error: [6588.334  6152.4507 4146.176 ]
+Iteration 4700, Error: [6588.345  6152.4766 4146.1465]
+Iteration 4800, Error: [6588.3228 6152.4473 4146.1665]
+Iteration 4900, Error: [6588.327 6152.454 4146.149]
+Iteration 5000, Error: [6588.3354 6152.4585 4146.169 ]
+Solved in 1.7694 seconds
+Saved result to result_mine.jpg
+--------------------------------------------------------------------------------
+Group 1: L2CACHE
++-----------------------+---------+------------+------------+------------+------------+------------+------------+------------+------------+
+|         Event         | Counter | HWThread 0 | HWThread 1 | HWThread 2 | HWThread 3 | HWThread 4 | HWThread 5 | HWThread 6 | HWThread 7 |
++-----------------------+---------+------------+------------+------------+------------+------------+------------+------------+------------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 5363831683 | 6719641848 | 6780988568 | 7081406310 | 6875067349 | 6527074065 | 5891604941 | 4386477997 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 3647111459 | 4369625958 | 4032294409 | 3999012899 | 3854425574 | 3992303153 | 4017958629 | 3093656077 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 2429812085 | 2892378889 | 2658632346 | 2631468670 | 2540579486 | 2640240356 | 2644571057 | 2036032161 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |  436189856 |  540740131 |  528691954 |  557044813 |  503234630 |  483584453 |  449905212 |  309899404 |
+|     L2_RQSTS_MISS     |   PMC1  |  124805409 |  146567213 |  135107030 |  150178956 |  135092688 |  131138715 |  128818860 |   93154517 |
++-----------------------+---------+------------+------------+------------+------------+------------+------------+------------+------------+
+
++----------------------------+---------+-------------+------------+------------+--------------+
+|            Event           | Counter |     Sum     |     Min    |     Max    |      Avg     |
++----------------------------+---------+-------------+------------+------------+--------------+
+|   INSTR_RETIRED_ANY STAT   |  FIXC0  | 49626092761 | 4386477997 | 7081406310 | 6.203262e+09 |
+| CPU_CLK_UNHALTED_CORE STAT |  FIXC1  | 31006388158 | 3093656077 | 4369625958 | 3.875799e+09 |
+|  CPU_CLK_UNHALTED_REF STAT |  FIXC2  | 20473715050 | 2036032161 | 2892378889 | 2.559214e+09 |
+| L2_TRANS_ALL_REQUESTS STAT |   PMC0  |  3809290453 |  309899404 |  557044813 | 4.761613e+08 |
+|     L2_RQSTS_MISS STAT     |   PMC1  |  1044863388 |   93154517 |  150178956 | 1.306079e+08 |
++----------------------------+---------+-------------+------------+------------+--------------+
+
++----------------------+------------+------------+------------+------------+------------+------------+------------+------------+
+|        Metric        | HWThread 0 | HWThread 1 | HWThread 2 | HWThread 3 | HWThread 4 | HWThread 5 | HWThread 6 | HWThread 7 |
++----------------------+------------+------------+------------+------------+------------+------------+------------+------------+
+|  Runtime (RDTSC) [s] |     2.0737 |     2.0737 |     2.0737 |     2.0737 |     2.0737 |     2.0737 |     2.0737 |     2.0737 |
+| Runtime unhalted [s] |     1.9195 |     2.2998 |     2.1223 |     2.1047 |     2.0286 |     2.1012 |     2.1147 |     1.6282 |
+|      Clock [MHz]     |  2851.8715 |  2870.4017 |  2881.6919 |  2887.4083 |  2882.5741 |  2872.9869 |  2886.7144 |  2886.9615 |
+|          CPI         |     0.6799 |     0.6503 |     0.5946 |     0.5647 |     0.5606 |     0.6117 |     0.6820 |     0.7053 |
+|    L2 request rate   |     0.0813 |     0.0805 |     0.0780 |     0.0787 |     0.0732 |     0.0741 |     0.0764 |     0.0706 |
+|     L2 miss rate     |     0.0233 |     0.0218 |     0.0199 |     0.0212 |     0.0196 |     0.0201 |     0.0219 |     0.0212 |
+|     L2 miss ratio    |     0.2861 |     0.2710 |     0.2555 |     0.2696 |     0.2684 |     0.2712 |     0.2863 |     0.3006 |
++----------------------+------------+------------+------------+------------+------------+------------+------------+------------+
+
++---------------------------+------------+-----------+-----------+-----------+
+|           Metric          |     Sum    |    Min    |    Max    |    Avg    |
++---------------------------+------------+-----------+-----------+-----------+
+|  Runtime (RDTSC) [s] STAT |    16.5896 |    2.0737 |    2.0737 |    2.0737 |
+| Runtime unhalted [s] STAT |    16.3190 |    1.6282 |    2.2998 |    2.0399 |
+|      Clock [MHz] STAT     | 23020.6103 | 2851.8715 | 2887.4083 | 2877.5763 |
+|          CPI STAT         |     5.0491 |    0.5606 |    0.7053 |    0.6311 |
+|    L2 request rate STAT   |     0.6128 |    0.0706 |    0.0813 |    0.0766 |
+|     L2 miss rate STAT     |     0.1690 |    0.0196 |    0.0233 |    0.0211 |
+|     L2 miss ratio STAT    |     2.2087 |    0.2555 |    0.3006 |    0.2761 |
++---------------------------+------------+-----------+-----------+-----------+
+
+
+======================================================================
+[2026-05-10 16:35:08.818520] [test0] likwid -g MEM → benchmark_openmp.py
+======================================================================
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz
+CPU type:	Intel Kabylake processor
+CPU clock:	1.90 GHz
+--------------------------------------------------------------------------------
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Running without Marker API. Activate Marker API with -m on commandline.
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Loading images from test0...
+Initializing OpenMP solver...
+Number of variables to solve: 67840
+Running solver...
+Iteration 100, Error: [21011.324 18846.95  17212.04 ]
+Iteration 200, Error: [13933.581 12531.527 11852.265]
+Iteration 300, Error: [10750.915  9736.075  9379.625]
+Iteration 400, Error: [8890.637  8027.7275 7834.544 ]
+Iteration 500, Error: [7658.2583 6855.2783 6753.8438]
+Iteration 600, Error: [6761.357  5992.9897 5956.8916]
+Iteration 700, Error: [6081.3076 5323.4785 5345.503 ]
+Iteration 800, Error: [5556.667 4783.9   4862.648]
+Iteration 900, Error: [5144.5576 4332.7725 4469.381 ]
+Iteration 1000, Error: [4811.8604 3946.064  4142.796 ]
+Iteration 1100, Error: [4539.0796 3609.2598 3868.5554]
+Iteration 1200, Error: [4309.6714 3311.687  3634.862 ]
+Iteration 1300, Error: [4113.7124 3047.0608 3433.599 ]
+Iteration 1400, Error: [3940.0627 2811.0154 3258.2202]
+Iteration 1500, Error: [3783.7896 2600.0208 3104.0415]
+Iteration 1600, Error: [3642.399  2411.6191 2967.272 ]
+Iteration 1700, Error: [3514.6357 2242.7217 2843.972 ]
+Iteration 1800, Error: [3398.3057 2090.793  2732.0415]
+Iteration 1900, Error: [3292.321  1954.1223 2629.933 ]
+Iteration 2000, Error: [3195.5796 1831.4194 2535.901 ]
+Iteration 2100, Error: [3106.4736 1721.1116 2449.6904]
+Iteration 2200, Error: [3024.0227 1622.0198 2369.983 ]
+Iteration 2300, Error: [2947.4358 1533.2478 2296.1846]
+Iteration 2400, Error: [2876.0415 1453.5927 2227.439 ]
+Iteration 2500, Error: [2809.447  1382.403  2162.7627]
+Iteration 2600, Error: [2746.8499 1318.8813 2101.767 ]
+Iteration 2700, Error: [2688.4324 1262.3799 2044.3181]
+Iteration 2800, Error: [2633.4092 1212.3032 1989.84  ]
+Iteration 2900, Error: [2581.4424 1167.5809 1937.9749]
+Iteration 3000, Error: [2532.355  1126.7064 1888.1501]
+Iteration 3100, Error: [2485.9148 1089.5112 1840.6223]
+Iteration 3200, Error: [2441.8972 1055.6882 1795.0017]
+Iteration 3300, Error: [2400.026  1024.7214 1751.4824]
+Iteration 3400, Error: [2359.9146  996.4291 1709.6426]
+Iteration 3500, Error: [2321.281   970.4488 1669.5461]
+Iteration 3600, Error: [2284.3923  946.3862 1630.8916]
+Iteration 3700, Error: [2248.7905   924.16675 1593.7798 ]
+Iteration 3800, Error: [2214.5168  903.5432 1558.0637]
+Iteration 3900, Error: [2181.6096  884.5178 1523.668 ]
+Iteration 4000, Error: [2149.691    866.91614 1490.3179 ]
+Iteration 4100, Error: [2119.028    850.51294 1458.1194 ]
+Iteration 4200, Error: [2089.2783   835.27527 1427.0979 ]
+Iteration 4300, Error: [2060.6252   820.93933 1397.1775 ]
+Iteration 4400, Error: [2032.7928  807.4197 1368.1404]
+Iteration 4500, Error: [2006.1194  794.6382 1340.3088]
+Iteration 4600, Error: [1980.05    782.2514 1313.3007]
+Iteration 4700, Error: [1954.8763   770.51196 1286.7534 ]
+Iteration 4800, Error: [1930.6838  759.3326 1261.4341]
+Iteration 4900, Error: [1907.074   748.4272 1237.165 ]
+Iteration 5000, Error: [1883.7886   737.81165 1213.1846 ]
+Solved in 1.2992 seconds
+Saved result to result2.jpg
+--------------------------------------------------------------------------------
+Group 1: MEM
++-----------------------+---------+------------+------------+------------+------------+------------+------------+------------+------------+
+|         Event         | Counter | HWThread 0 | HWThread 1 | HWThread 2 | HWThread 3 | HWThread 4 | HWThread 5 | HWThread 6 | HWThread 7 |
++-----------------------+---------+------------+------------+------------+------------+------------+------------+------------+------------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 2322415271 | 3057173614 | 2771908019 | 3069111932 | 2851947507 | 2609068644 | 2396086069 | 1709441408 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 1829326359 | 2127102132 | 1836563032 | 1862541498 | 1715375118 | 1740037091 | 1642269598 | 1504447789 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 1340960852 | 1552422206 | 1332533290 | 1356961196 | 1244205760 | 1262745164 | 1192123746 | 1105074041 |
+|       DRAM_READS      | MBOX0C1 |  101407388 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
+|      DRAM_WRITES      | MBOX0C2 |   55009906 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
++-----------------------+---------+------------+------------+------------+------------+------------+------------+------------+------------+
+
++----------------------------+---------+-------------+------------+------------+--------------+
+|            Event           | Counter |     Sum     |     Min    |     Max    |      Avg     |
++----------------------------+---------+-------------+------------+------------+--------------+
+|   INSTR_RETIRED_ANY STAT   |  FIXC0  | 20787152464 | 1709441408 | 3069111932 |   2598394058 |
+| CPU_CLK_UNHALTED_CORE STAT |  FIXC1  | 14257662617 | 1504447789 | 2127102132 | 1.782208e+09 |
+|  CPU_CLK_UNHALTED_REF STAT |  FIXC2  | 10387026255 | 1105074041 | 1552422206 | 1.298378e+09 |
+|       DRAM_READS STAT      | MBOX0C1 |   101407388 |          0 |  101407388 | 1.267592e+07 |
+|      DRAM_WRITES STAT      | MBOX0C2 |    55009906 |          0 |   55009906 | 6.876238e+06 |
++----------------------------+---------+-------------+------------+------------+--------------+
+
++-----------------------------------+------------+------------+------------+------------+------------+------------+------------+------------+
+|               Metric              | HWThread 0 | HWThread 1 | HWThread 2 | HWThread 3 | HWThread 4 | HWThread 5 | HWThread 6 | HWThread 7 |
++-----------------------------------+------------+------------+------------+------------+------------+------------+------------+------------+
+|        Runtime (RDTSC) [s]        |     1.6183 |     1.6183 |     1.6183 |     1.6183 |     1.6183 |     1.6183 |     1.6183 |     1.6183 |
+|        Runtime unhalted [s]       |     0.9628 |     1.1195 |     0.9666 |     0.9803 |     0.9028 |     0.9158 |     0.8644 |     0.7918 |
+|            Clock [MHz]            |  2591.9624 |  2603.3472 |  2618.6736 |  2607.9072 |  2619.5126 |  2618.1613 |  2617.4399 |  2586.6600 |
+|                CPI                |     0.7877 |     0.6958 |     0.6626 |     0.6069 |     0.6015 |     0.6669 |     0.6854 |     0.8801 |
+|  Memory load bandwidth [MBytes/s] |  4010.4194 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
+|  Memory load data volume [GBytes] |     6.4901 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
+| Memory evict bandwidth [MBytes/s] |  2175.5101 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
+| Memory evict data volume [GBytes] |     3.5206 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
+|    Memory bandwidth [MBytes/s]    |  6185.9294 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
+|    Memory data volume [GBytes]    |    10.0107 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
++-----------------------------------+------------+------------+------------+------------+------------+------------+------------+------------+
+
++----------------------------------------+------------+-----------+-----------+-----------+
+|                 Metric                 |     Sum    |    Min    |    Max    |    Avg    |
++----------------------------------------+------------+-----------+-----------+-----------+
+|        Runtime (RDTSC) [s] STAT        |    12.9464 |    1.6183 |    1.6183 |    1.6183 |
+|        Runtime unhalted [s] STAT       |     7.5040 |    0.7918 |    1.1195 |    0.9380 |
+|            Clock [MHz] STAT            | 20863.6642 | 2586.6600 | 2619.5126 | 2607.9580 |
+|                CPI STAT                |     5.5869 |    0.6015 |    0.8801 |    0.6984 |
+|  Memory load bandwidth [MBytes/s] STAT |  4010.4194 |         0 | 4010.4194 |  501.3024 |
+|  Memory load data volume [GBytes] STAT |     6.4901 |         0 |    6.4901 |    0.8113 |
+| Memory evict bandwidth [MBytes/s] STAT |  2175.5101 |         0 | 2175.5101 |  271.9388 |
+| Memory evict data volume [GBytes] STAT |     3.5206 |         0 |    3.5206 |    0.4401 |
+|    Memory bandwidth [MBytes/s] STAT    |  6185.9294 |         0 | 6185.9294 |  773.2412 |
+|    Memory data volume [GBytes] STAT    |    10.0107 |         0 |   10.0107 |    1.2513 |
++----------------------------------------+------------+-----------+-----------+-----------+
+
+
+======================================================================
+[2026-05-10 16:35:10.538049] [test0] likwid -g L2CACHE → benchmark_openmp.py
+======================================================================
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz
+CPU type:	Intel Kabylake processor
+CPU clock:	1.90 GHz
+--------------------------------------------------------------------------------
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Running without Marker API. Activate Marker API with -m on commandline.
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Loading images from test0...
+Initializing OpenMP solver...
+Number of variables to solve: 67840
+Running solver...
+Iteration 100, Error: [21011.324 18846.95  17212.04 ]
+Iteration 200, Error: [13933.581 12531.527 11852.265]
+Iteration 300, Error: [10750.915  9736.075  9379.625]
+Iteration 400, Error: [8890.637  8027.7275 7834.544 ]
+Iteration 500, Error: [7658.2583 6855.2783 6753.8438]
+Iteration 600, Error: [6761.357  5992.9897 5956.8916]
+Iteration 700, Error: [6081.3076 5323.4785 5345.503 ]
+Iteration 800, Error: [5556.667 4783.9   4862.648]
+Iteration 900, Error: [5144.5576 4332.7725 4469.381 ]
+Iteration 1000, Error: [4811.8604 3946.064  4142.796 ]
+Iteration 1100, Error: [4539.0796 3609.2598 3868.5554]
+Iteration 1200, Error: [4309.6714 3311.687  3634.862 ]
+Iteration 1300, Error: [4113.7124 3047.0608 3433.599 ]
+Iteration 1400, Error: [3940.0627 2811.0154 3258.2202]
+Iteration 1500, Error: [3783.7896 2600.0208 3104.0415]
+Iteration 1600, Error: [3642.399  2411.6191 2967.272 ]
+Iteration 1700, Error: [3514.6357 2242.7217 2843.972 ]
+Iteration 1800, Error: [3398.3057 2090.793  2732.0415]
+Iteration 1900, Error: [3292.321  1954.1223 2629.933 ]
+Iteration 2000, Error: [3195.5796 1831.4194 2535.901 ]
+Iteration 2100, Error: [3106.4736 1721.1116 2449.6904]
+Iteration 2200, Error: [3024.0227 1622.0198 2369.983 ]
+Iteration 2300, Error: [2947.4358 1533.2478 2296.1846]
+Iteration 2400, Error: [2876.0415 1453.5927 2227.439 ]
+Iteration 2500, Error: [2809.447  1382.403  2162.7627]
+Iteration 2600, Error: [2746.8499 1318.8813 2101.767 ]
+Iteration 2700, Error: [2688.4324 1262.3799 2044.3181]
+Iteration 2800, Error: [2633.4092 1212.3032 1989.84  ]
+Iteration 2900, Error: [2581.4424 1167.5809 1937.9749]
+Iteration 3000, Error: [2532.355  1126.7064 1888.1501]
+Iteration 3100, Error: [2485.9148 1089.5112 1840.6223]
+Iteration 3200, Error: [2441.8972 1055.6882 1795.0017]
+Iteration 3300, Error: [2400.026  1024.7214 1751.4824]
+Iteration 3400, Error: [2359.9146  996.4291 1709.6426]
+Iteration 3500, Error: [2321.281   970.4488 1669.5461]
+Iteration 3600, Error: [2284.3923  946.3862 1630.8916]
+Iteration 3700, Error: [2248.7905   924.16675 1593.7798 ]
+Iteration 3800, Error: [2214.5168  903.5432 1558.0637]
+Iteration 3900, Error: [2181.6096  884.5178 1523.668 ]
+Iteration 4000, Error: [2149.691    866.91614 1490.3179 ]
+Iteration 4100, Error: [2119.028    850.51294 1458.1194 ]
+Iteration 4200, Error: [2089.2783   835.27527 1427.0979 ]
+Iteration 4300, Error: [2060.6252   820.93933 1397.1775 ]
+Iteration 4400, Error: [2032.7928  807.4197 1368.1404]
+Iteration 4500, Error: [2006.1194  794.6382 1340.3088]
+Iteration 4600, Error: [1980.05    782.2514 1313.3007]
+Iteration 4700, Error: [1954.8763   770.51196 1286.7534 ]
+Iteration 4800, Error: [1930.6838  759.3326 1261.4341]
+Iteration 4900, Error: [1907.074   748.4272 1237.165 ]
+Iteration 5000, Error: [1883.7886   737.81165 1213.1846 ]
+Solved in 1.0981 seconds
+Saved result to result2.jpg
+--------------------------------------------------------------------------------
+Group 1: L2CACHE
++-----------------------+---------+------------+------------+------------+------------+------------+------------+------------+------------+
+|         Event         | Counter | HWThread 0 | HWThread 1 | HWThread 2 | HWThread 3 | HWThread 4 | HWThread 5 | HWThread 6 | HWThread 7 |
++-----------------------+---------+------------+------------+------------+------------+------------+------------+------------+------------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 2267438099 | 3084453258 | 2888451674 | 2904059550 | 2869011627 | 2613562812 | 2321960822 | 1491399371 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 1760554622 | 2184199180 | 1970329915 | 1630898914 | 1742506416 | 1727969050 | 1558452530 | 1186632886 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 1263543854 | 1554926190 | 1403971015 | 1151627714 | 1231313434 | 1218192087 | 1096946047 |  838363721 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |  173950490 |  229583115 |  222327612 |  204088755 |  193192641 |  180788070 |  159280533 |  105194368 |
+|     L2_RQSTS_MISS     |   PMC1  |   50165256 |   63640899 |   61206547 |   57792063 |   57272131 |   54826308 |   47893265 |   33122535 |
++-----------------------+---------+------------+------------+------------+------------+------------+------------+------------+------------+
+
++----------------------------+---------+-------------+------------+------------+--------------+
+|            Event           | Counter |     Sum     |     Min    |     Max    |      Avg     |
++----------------------------+---------+-------------+------------+------------+--------------+
+|   INSTR_RETIRED_ANY STAT   |  FIXC0  | 20440337213 | 1491399371 | 3084453258 | 2.555042e+09 |
+| CPU_CLK_UNHALTED_CORE STAT |  FIXC1  | 13761543513 | 1186632886 | 2184199180 | 1.720193e+09 |
+|  CPU_CLK_UNHALTED_REF STAT |  FIXC2  |  9758884062 |  838363721 | 1554926190 | 1.219861e+09 |
+| L2_TRANS_ALL_REQUESTS STAT |   PMC0  |  1468405584 |  105194368 |  229583115 |    183550698 |
+|     L2_RQSTS_MISS STAT     |   PMC1  |   425919004 |   33122535 |   63640899 | 5.323988e+07 |
++----------------------------+---------+-------------+------------+------------+--------------+
+
++----------------------+------------+------------+------------+------------+------------+------------+------------+------------+
+|        Metric        | HWThread 0 | HWThread 1 | HWThread 2 | HWThread 3 | HWThread 4 | HWThread 5 | HWThread 6 | HWThread 7 |
++----------------------+------------+------------+------------+------------+------------+------------+------------+------------+
+|  Runtime (RDTSC) [s] |     1.4146 |     1.4146 |     1.4146 |     1.4146 |     1.4146 |     1.4146 |     1.4146 |     1.4146 |
+| Runtime unhalted [s] |     0.9266 |     1.1496 |     1.0370 |     0.8584 |     0.9171 |     0.9095 |     0.8202 |     0.6245 |
+|      Clock [MHz]     |  2647.3587 |  2668.9231 |  2666.4559 |  2690.7202 |  2688.8054 |  2695.0932 |  2699.3669 |  2689.2892 |
+|          CPI         |     0.7765 |     0.7081 |     0.6821 |     0.5616 |     0.6074 |     0.6612 |     0.6712 |     0.7957 |
+|    L2 request rate   |     0.0767 |     0.0744 |     0.0770 |     0.0703 |     0.0673 |     0.0692 |     0.0686 |     0.0705 |
+|     L2 miss rate     |     0.0221 |     0.0206 |     0.0212 |     0.0199 |     0.0200 |     0.0210 |     0.0206 |     0.0222 |
+|     L2 miss ratio    |     0.2884 |     0.2772 |     0.2753 |     0.2832 |     0.2965 |     0.3033 |     0.3007 |     0.3149 |
++----------------------+------------+------------+------------+------------+------------+------------+------------+------------+
+
++---------------------------+------------+-----------+-----------+-----------+
+|           Metric          |     Sum    |    Min    |    Max    |    Avg    |
++---------------------------+------------+-----------+-----------+-----------+
+|  Runtime (RDTSC) [s] STAT |    11.3168 |    1.4146 |    1.4146 |    1.4146 |
+| Runtime unhalted [s] STAT |     7.2429 |    0.6245 |    1.1496 |    0.9054 |
+|      Clock [MHz] STAT     | 21446.0126 | 2647.3587 | 2699.3669 | 2680.7516 |
+|          CPI STAT         |     5.4638 |    0.5616 |    0.7957 |    0.6830 |
+|    L2 request rate STAT   |     0.5740 |    0.0673 |    0.0770 |    0.0718 |
+|     L2 miss rate STAT     |     0.1676 |    0.0199 |    0.0222 |    0.0209 |
+|     L2 miss ratio STAT    |     2.3395 |    0.2753 |    0.3149 |    0.2924 |
++---------------------------+------------+-----------+-----------+-----------+
+
+
+======================================================================
+[2026-05-10 16:35:12.046788] [test0] likwid -g MEM → benchmark_v2.py
+======================================================================
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz
+CPU type:	Intel Kabylake processor
+CPU clock:	1.90 GHz
+--------------------------------------------------------------------------------
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Running without Marker API. Activate Marker API with -m on commandline.
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Loading images from test0...
+Initializing OpenMP Multigrid v2 solver...
+Number of variables to solve: 67840
+Running solver...
+Iteration 100, Error: [7107.9126 6641.9326 4792.423 ]
+Iteration 200, Error: [6755.605  6327.9434 4530.405 ]
+Iteration 300, Error: [6654.511  6250.1245 4405.263 ]
+Iteration 400, Error: [6625.5684 6215.874  4324.034 ]
+Iteration 500, Error: [6612.3154 6194.8    4270.1245]
+Iteration 600, Error: [6604.1733 6181.242  4233.401 ]
+Iteration 700, Error: [6598.951  6172.257  4207.9463]
+Iteration 800, Error: [6595.4976 6166.189  4190.2617]
+Iteration 900, Error: [6593.19  6162.01  4177.703]
+Iteration 1000, Error: [6591.5938 6159.087  4168.6973]
+Iteration 1100, Error: [6590.5107 6157.037  4162.2314]
+Iteration 1200, Error: [6589.7354 6155.5967 4157.6064]
+Iteration 1300, Error: [6589.1963 6154.57   4154.2646]
+Iteration 1400, Error: [6588.854 6153.824 4151.849]
+Iteration 1500, Error: [6588.617 6153.324 4150.105]
+Iteration 1600, Error: [6588.4844 6152.9824 4148.8364]
+Iteration 1700, Error: [6588.4053 6152.7495 4147.966 ]
+Iteration 1800, Error: [6588.3633 6152.601  4147.337 ]
+Iteration 1900, Error: [6588.334  6152.528  4146.9116]
+Iteration 2000, Error: [6588.3237 6152.492  4146.632 ]
+Iteration 2100, Error: [6588.3037 6152.4453 4146.446 ]
+Iteration 2200, Error: [6588.3154 6152.4517 4146.336 ]
+Iteration 2300, Error: [6588.3423 6152.439  4146.2437]
+Iteration 2400, Error: [6588.33   6152.439  4146.2236]
+Iteration 2500, Error: [6588.334  6152.4546 4146.1836]
+Iteration 2600, Error: [6588.3335 6152.4585 4146.176 ]
+Iteration 2700, Error: [6588.335  6152.441  4146.1763]
+Iteration 2800, Error: [6588.3496 6152.458  4146.149 ]
+Iteration 2900, Error: [6588.3457 6152.4688 4146.159 ]
+Iteration 3000, Error: [6588.3223 6152.45   4146.1436]
+Iteration 3100, Error: [6588.3486 6152.4526 4146.172 ]
+Iteration 3200, Error: [6588.3525 6152.4575 4146.141 ]
+Iteration 3300, Error: [6588.341  6152.4595 4146.166 ]
+Iteration 3400, Error: [6588.3267 6152.444  4146.16  ]
+Iteration 3500, Error: [6588.3438 6152.4526 4146.1753]
+Iteration 3600, Error: [6588.338  6152.4453 4146.1606]
+Iteration 3700, Error: [6588.3257 6152.4736 4146.181 ]
+Iteration 3800, Error: [6588.354  6152.4536 4146.1475]
+Iteration 3900, Error: [6588.3306 6152.4507 4146.1772]
+Iteration 4000, Error: [6588.3335 6152.4556 4146.153 ]
+Iteration 4100, Error: [6588.347  6152.4463 4146.1587]
+Iteration 4200, Error: [6588.3413 6152.4556 4146.1514]
+Iteration 4300, Error: [6588.3276 6152.447  4146.159 ]
+Iteration 4400, Error: [6588.346 6152.45  4146.175]
+Iteration 4500, Error: [6588.3335 6152.474  4146.1694]
+Iteration 4600, Error: [6588.334  6152.4507 4146.176 ]
+Iteration 4700, Error: [6588.345  6152.4766 4146.1465]
+Iteration 4800, Error: [6588.3228 6152.4473 4146.1665]
+Iteration 4900, Error: [6588.327 6152.454 4146.149]
+Iteration 5000, Error: [6588.3354 6152.4585 4146.169 ]
+Solved in 3.1065 seconds
+Saved result to result_v2.jpg
+--------------------------------------------------------------------------------
+Group 1: MEM
++-----------------------+---------+------------+------------+------------+------------+------------+------------+------------+------------+
+|         Event         | Counter | HWThread 0 | HWThread 1 | HWThread 2 | HWThread 3 | HWThread 4 | HWThread 5 | HWThread 6 | HWThread 7 |
++-----------------------+---------+------------+------------+------------+------------+------------+------------+------------+------------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 5624246121 | 6909710595 | 6905897424 | 7194986867 | 7019380638 | 6621518301 | 6084086107 | 4493870719 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 4399846903 | 5057477940 | 4700298195 | 4617018929 | 4458102822 | 4535419028 | 4570640325 | 3613368598 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 3179894491 | 3642044728 | 3381472866 | 3313603413 | 3206792806 | 3253142106 | 3282234409 | 2596077302 |
+|       DRAM_READS      | MBOX0C1 |  191545876 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
+|      DRAM_WRITES      | MBOX0C2 |  103948428 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
++-----------------------+---------+------------+------------+------------+------------+------------+------------+------------+------------+
+
++----------------------------+---------+-------------+------------+------------+--------------+
+|            Event           | Counter |     Sum     |     Min    |     Max    |      Avg     |
++----------------------------+---------+-------------+------------+------------+--------------+
+|   INSTR_RETIRED_ANY STAT   |  FIXC0  | 50853696772 | 4493870719 | 7194986867 | 6.356712e+09 |
+| CPU_CLK_UNHALTED_CORE STAT |  FIXC1  | 35952172740 | 3613368598 | 5057477940 | 4.494022e+09 |
+|  CPU_CLK_UNHALTED_REF STAT |  FIXC2  | 25855262121 | 2596077302 | 3642044728 | 3.231908e+09 |
+|       DRAM_READS STAT      | MBOX0C1 |   191545876 |          0 |  191545876 | 2.394323e+07 |
+|      DRAM_WRITES STAT      | MBOX0C2 |   103948428 |          0 |  103948428 | 1.299355e+07 |
++----------------------------+---------+-------------+------------+------------+--------------+
+
++-----------------------------------+------------+------------+------------+------------+------------+------------+------------+------------+
+|               Metric              | HWThread 0 | HWThread 1 | HWThread 2 | HWThread 3 | HWThread 4 | HWThread 5 | HWThread 6 | HWThread 7 |
++-----------------------------------+------------+------------+------------+------------+------------+------------+------------+------------+
+|        Runtime (RDTSC) [s]        |     3.4198 |     3.4198 |     3.4198 |     3.4198 |     3.4198 |     3.4198 |     3.4198 |     3.4198 |
+|        Runtime unhalted [s]       |     2.3157 |     2.6618 |     2.4738 |     2.4300 |     2.3464 |     2.3871 |     2.4056 |     1.9018 |
+|            Clock [MHz]            |  2628.9266 |  2638.4102 |  2641.0286 |  2647.3705 |  2641.3915 |  2648.9148 |  2645.8246 |  2644.5285 |
+|                CPI                |     0.7823 |     0.7319 |     0.6806 |     0.6417 |     0.6351 |     0.6850 |     0.7512 |     0.8041 |
+|  Memory load bandwidth [MBytes/s] |  3584.6798 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
+|  Memory load data volume [GBytes] |    12.2589 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
+| Memory evict bandwidth [MBytes/s] |  1945.3399 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
+| Memory evict data volume [GBytes] |     6.6527 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
+|    Memory bandwidth [MBytes/s]    |  5530.0196 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
+|    Memory data volume [GBytes]    |    18.9116 |          0 |          0 |          0 |          0 |          0 |          0 |          0 |
++-----------------------------------+------------+------------+------------+------------+------------+------------+------------+------------+
+
++----------------------------------------+------------+-----------+-----------+-----------+
+|                 Metric                 |     Sum    |    Min    |    Max    |    Avg    |
++----------------------------------------+------------+-----------+-----------+-----------+
+|        Runtime (RDTSC) [s] STAT        |    27.3584 |    3.4198 |    3.4198 |    3.4198 |
+|        Runtime unhalted [s] STAT       |    18.9222 |    1.9018 |    2.6618 |    2.3653 |
+|            Clock [MHz] STAT            | 21136.3953 | 2628.9266 | 2648.9148 | 2642.0494 |
+|                CPI STAT                |     5.7119 |    0.6351 |    0.8041 |    0.7140 |
+|  Memory load bandwidth [MBytes/s] STAT |  3584.6798 |         0 | 3584.6798 |  448.0850 |
+|  Memory load data volume [GBytes] STAT |    12.2589 |         0 |   12.2589 |    1.5324 |
+| Memory evict bandwidth [MBytes/s] STAT |  1945.3399 |         0 | 1945.3399 |  243.1675 |
+| Memory evict data volume [GBytes] STAT |     6.6527 |         0 |    6.6527 |    0.8316 |
+|    Memory bandwidth [MBytes/s] STAT    |  5530.0196 |         0 | 5530.0196 |  691.2524 |
+|    Memory data volume [GBytes] STAT    |    18.9116 |         0 |   18.9116 |    2.3639 |
++----------------------------------------+------------+-----------+-----------+-----------+
+
+
+======================================================================
+[2026-05-10 16:35:15.573576] [test0] likwid -g L2CACHE → benchmark_v2.py
+======================================================================
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz
+CPU type:	Intel Kabylake processor
+CPU clock:	1.90 GHz
+--------------------------------------------------------------------------------
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Running without Marker API. Activate Marker API with -m on commandline.
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Problems reading symbols for shepherd thread detection: Success
+Loading images from test0...
+Initializing OpenMP Multigrid v2 solver...
+Number of variables to solve: 67840
+Running solver...
+Iteration 100, Error: [7107.9126 6641.9326 4792.423 ]
+Iteration 200, Error: [6755.605  6327.9434 4530.405 ]
+Iteration 300, Error: [6654.511  6250.1245 4405.263 ]
+Iteration 400, Error: [6625.5684 6215.874  4324.034 ]
+Iteration 500, Error: [6612.3154 6194.8    4270.1245]
+Iteration 600, Error: [6604.1733 6181.242  4233.401 ]
+Iteration 700, Error: [6598.951  6172.257  4207.9463]
+Iteration 800, Error: [6595.4976 6166.189  4190.2617]
+Iteration 900, Error: [6593.19  6162.01  4177.703]
+Iteration 1000, Error: [6591.5938 6159.087  4168.6973]
+Iteration 1100, Error: [6590.5107 6157.037  4162.2314]
+Iteration 1200, Error: [6589.7354 6155.5967 4157.6064]
+Iteration 1300, Error: [6589.1963 6154.57   4154.2646]
+Iteration 1400, Error: [6588.854 6153.824 4151.849]
+Iteration 1500, Error: [6588.617 6153.324 4150.105]
+Iteration 1600, Error: [6588.4844 6152.9824 4148.8364]
+Iteration 1700, Error: [6588.4053 6152.7495 4147.966 ]
+Iteration 1800, Error: [6588.3633 6152.601  4147.337 ]
+Iteration 1900, Error: [6588.334  6152.528  4146.9116]
+Iteration 2000, Error: [6588.3237 6152.492  4146.632 ]
+Iteration 2100, Error: [6588.3037 6152.4453 4146.446 ]
+Iteration 2200, Error: [6588.3154 6152.4517 4146.336 ]
+Iteration 2300, Error: [6588.3423 6152.439  4146.2437]
+Iteration 2400, Error: [6588.33   6152.439  4146.2236]
+Iteration 2500, Error: [6588.334  6152.4546 4146.1836]
+Iteration 2600, Error: [6588.3335 6152.4585 4146.176 ]
+Iteration 2700, Error: [6588.335  6152.441  4146.1763]
+Iteration 2800, Error: [6588.3496 6152.458  4146.149 ]
+Iteration 2900, Error: [6588.3457 6152.4688 4146.159 ]
+Iteration 3000, Error: [6588.3223 6152.45   4146.1436]
+Iteration 3100, Error: [6588.3486 6152.4526 4146.172 ]
+Iteration 3200, Error: [6588.3525 6152.4575 4146.141 ]
+Iteration 3300, Error: [6588.341  6152.4595 4146.166 ]
+Iteration 3400, Error: [6588.3267 6152.444  4146.16  ]
+Iteration 3500, Error: [6588.3438 6152.4526 4146.1753]
+Iteration 3600, Error: [6588.338  6152.4453 4146.1606]
+Iteration 3700, Error: [6588.3257 6152.4736 4146.181 ]
+Iteration 3800, Error: [6588.354  6152.4536 4146.1475]
+Iteration 3900, Error: [6588.3306 6152.4507 4146.1772]
+Iteration 4000, Error: [6588.3335 6152.4556 4146.153 ]
+Iteration 4100, Error: [6588.347  6152.4463 4146.1587]
+Iteration 4200, Error: [6588.3413 6152.4556 4146.1514]
+Iteration 4300, Error: [6588.3276 6152.447  4146.159 ]
+Iteration 4400, Error: [6588.346 6152.45  4146.175]
+Iteration 4500, Error: [6588.3335 6152.474  4146.1694]
+Iteration 4600, Error: [6588.334  6152.4507 4146.176 ]
+Iteration 4700, Error: [6588.345  6152.4766 4146.1465]
+Iteration 4800, Error: [6588.3228 6152.4473 4146.1665]
+Iteration 4900, Error: [6588.327 6152.454 4146.149]
+Iteration 5000, Error: [6588.3354 6152.4585 4146.169 ]
+Solved in 2.9888 seconds
+Saved result to result_v2.jpg
+--------------------------------------------------------------------------------
+Group 1: L2CACHE
++-----------------------+---------+------------+------------+------------+------------+------------+------------+------------+------------+
+|         Event         | Counter | HWThread 0 | HWThread 1 | HWThread 2 | HWThread 3 | HWThread 4 | HWThread 5 | HWThread 6 | HWThread 7 |
++-----------------------+---------+------------+------------+------------+------------+------------+------------+------------+------------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 5552077583 | 6955090146 | 6982136003 | 7345791591 | 6914191105 | 6645415449 | 6106619287 | 4675411122 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 4142147050 | 4999288297 | 4582018828 | 4606084335 | 4220615219 | 4411575088 | 4554289918 | 3740013372 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 3024220646 | 3652129157 | 3330288134 | 3349906915 | 3065639556 | 3205289120 | 3313803362 | 2719702822 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |  469538136 |  588238415 |  573634765 |  574227274 |  523838005 |  514073785 |  487161022 |  355198039 |
+|     L2_RQSTS_MISS     |   PMC1  |  133166524 |  156429453 |  150129466 |  152094248 |  149540074 |  141186961 |  138637013 |  107944542 |
++-----------------------+---------+------------+------------+------------+------------+------------+------------+------------+------------+
+
++----------------------------+---------+-------------+------------+------------+--------------+
+|            Event           | Counter |     Sum     |     Min    |     Max    |      Avg     |
++----------------------------+---------+-------------+------------+------------+--------------+
+|   INSTR_RETIRED_ANY STAT   |  FIXC0  | 51176732286 | 4675411122 | 7345791591 | 6.397092e+09 |
+| CPU_CLK_UNHALTED_CORE STAT |  FIXC1  | 35256032107 | 3740013372 | 4999288297 | 4.407004e+09 |
+|  CPU_CLK_UNHALTED_REF STAT |  FIXC2  | 25660979712 | 2719702822 | 3652129157 |   3207622464 |
+| L2_TRANS_ALL_REQUESTS STAT |   PMC0  |  4085909441 |  355198039 |  588238415 | 5.107387e+08 |
+|     L2_RQSTS_MISS STAT     |   PMC1  |  1129128281 |  107944542 |  156429453 | 1.411410e+08 |
++----------------------------+---------+-------------+------------+------------+--------------+
+
++----------------------+------------+------------+------------+------------+------------+------------+------------+------------+
+|        Metric        | HWThread 0 | HWThread 1 | HWThread 2 | HWThread 3 | HWThread 4 | HWThread 5 | HWThread 6 | HWThread 7 |
++----------------------+------------+------------+------------+------------+------------+------------+------------+------------+
+|  Runtime (RDTSC) [s] |     3.2927 |     3.2927 |     3.2927 |     3.2927 |     3.2927 |     3.2927 |     3.2927 |     3.2927 |
+| Runtime unhalted [s] |     2.1801 |     2.6312 |     2.4116 |     2.4243 |     2.2214 |     2.3219 |     2.3970 |     1.9684 |
+|      Clock [MHz]     |  2602.3496 |  2600.8521 |  2614.1389 |  2612.4786 |  2615.8225 |  2615.0504 |  2611.2445 |  2612.7948 |
+|          CPI         |     0.7461 |     0.7188 |     0.6562 |     0.6270 |     0.6104 |     0.6639 |     0.7458 |     0.7999 |
+|    L2 request rate   |     0.0846 |     0.0846 |     0.0822 |     0.0782 |     0.0758 |     0.0774 |     0.0798 |     0.0760 |
+|     L2 miss rate     |     0.0240 |     0.0225 |     0.0215 |     0.0207 |     0.0216 |     0.0212 |     0.0227 |     0.0231 |
+|     L2 miss ratio    |     0.2836 |     0.2659 |     0.2617 |     0.2649 |     0.2855 |     0.2746 |     0.2846 |     0.3039 |
++----------------------+------------+------------+------------+------------+------------+------------+------------+------------+
+
++---------------------------+------------+-----------+-----------+-----------+
+|           Metric          |     Sum    |    Min    |    Max    |    Avg    |
++---------------------------+------------+-----------+-----------+-----------+
+|  Runtime (RDTSC) [s] STAT |    26.3416 |    3.2927 |    3.2927 |    3.2927 |
+| Runtime unhalted [s] STAT |    18.5559 |    1.9684 |    2.6312 |    2.3195 |
+|      Clock [MHz] STAT     | 20884.7314 | 2600.8521 | 2615.8225 | 2610.5914 |
+|          CPI STAT         |     5.5681 |    0.6104 |    0.7999 |    0.6960 |
+|    L2 request rate STAT   |     0.6386 |    0.0758 |    0.0846 |    0.0798 |
+|     L2 miss rate STAT     |     0.1773 |    0.0207 |    0.0240 |    0.0222 |
+|     L2 miss ratio STAT    |     2.2247 |    0.2617 |    0.3039 |    0.2781 |
++---------------------------+------------+-----------+-----------+-----------+
+
+
+======================================================================
+[2026-05-10 16:35:18.974464] [test0] likwid -g MEM → benchmark_v3.py
+======================================================================
